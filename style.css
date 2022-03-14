@@ -1,0 +1,458 @@
+body{
+    background-color: yellow;
+    /* box-sizing: border-box; */
+}
+
+.heading1{
+    text-align: center;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: darkslateblue;
+    margin: 40px;
+    animation-name: box1;
+    animation-duration: 4s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box1{
+    from{
+        transform: skewX(30deg);
+    }
+    to{
+        transform: skewX(-30deg);
+    }
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: 40px;
+    animation-name: box2;
+    animation-duration: 4s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box2{
+    from{
+        transform: skewY(30deg);
+    }
+    to{
+        transform: skewY(-30deg);
+    }
+}
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: sandybrown;
+    margin: 40px;
+    animation-name: box3;
+    animation-duration: 4s;
+    /* animation-direction: alternate; */
+    animation-iteration-count: infinite;
+}
+
+@keyframes box3{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.box4{
+    width: 100px;
+    height: 50px;
+    background-color: seagreen;
+    margin: 40px;
+    animation-name: box4;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box4{
+    from{
+        /* transform: scaleY(2); */
+    }
+    to{
+        transform: scaleY(2);
+    }
+}
+
+.box5{
+    width: 50px;
+    height: 100px;
+    background-color: cornflowerblue;
+    margin: 40px;
+    animation-name: box5;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box5{
+    from{
+        /* transform: scaleY(2); */
+    }
+    to{
+        transform: scalex(2);
+    }
+}
+
+.box6{
+    width: 100px;
+    height: 100px;
+    background-color: darkmagenta;
+    margin: 40px;
+    animation-name: box6;
+    animation-duration: 2s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box6{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.boxrows{
+    display: flex;
+    justify-content: center;
+}
+.text{
+    position: relative;
+    top: 130px;
+}
+
+.another{
+    text-align: center;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin-left: 700px;
+}
+
+.text1{
+    position: relative;
+    left: 650px;
+    top: 30px;
+}
+
+.second-box1:hover{
+    width: 300px;
+    transition-duration: 2s;
+}
+
+.second-box2:hover{
+    width: 300px;
+    height: 300px;
+    transition-duration: 2s;
+}
+
+.second-box3:hover{
+    width: 300px;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+}
+
+.second-box4:hover{
+    width: 300px;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+.second-box5:hover{
+    width: 300px;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+}
+
+.second-box6:hover{
+    width: 300px;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+.second-box7:hover{
+    width: 300px;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+/* 
+.heading2{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 500px;
+    z-index: 2;
+}
+
+.body3{
+    background-color: white;
+    height: 97vh;
+    margin: 0px;
+    border-top: 20px solid white;
+    border-left: 8px solid orangered;
+    border-right: 8px solid green;
+}
+
+.sky-city{
+    width: 99vw;
+    height: 60vh;
+    position: absolute;
+}
+
+.sky{
+    background-image: url(./sky\ \(2\).jpg);
+    width: 99vw;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.city{
+    background-image: url(./city\ \(2\).png);
+    width: 99%;
+    height: 50%;
+    position: relative;
+    bottom: 218px;
+    z-index: 2;
+}
+
+.road{
+    background-image: url(./road\ \(2\).jpg);
+    width: 99vw;
+    height: 37vh;
+    position: relative;
+    top: 61%;
+    animation-name: road;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+@keyframes road{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-300px);
+    }
+}
+
+
+
+.car{
+    background-image: url(./car\ \(2\).png);
+    background-size: cover;
+    width: 350px;
+    height: 100px;
+    z-index: 4;
+    position: relative;
+    left: 550px;
+    top: 120px;
+}
+
+.wheel1{
+    background-image: url(./wheel\ \(2\).png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 100px;
+    left: 576px;
+    animation-name: wheel;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.wheel2{
+    background-image: url(./wheel\ \(2\).png);
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 30px;
+    left: 792px;
+    animation-name: wheel;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wheel{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.sun{
+    background-image: url(./sun.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: 5;
+}  */
+
+.bodyy{
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.back{
+    background-image: url(./sky\ \(2\).jpg);
+    background-size: cover;
+    height: 700px;
+    border-top: 20px solid white;
+    border-left: 10px solid rgb(242, 166, 2);
+    border-right: 10px solid rgb(0, 197, 16);
+    overflow: hidden;
+    z-index: -1;
+}
+
+.header3{
+    font-size: 40px;
+    text-align: center;
+}
+
+.happy{
+    background-color: orange;
+}
+
+.inde{
+    background-color: white;
+}
+
+.day{
+    background-color: green;
+}
+
+.sun{
+    background-image: url(./sun.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 1200px;
+    top: 50px;
+    animation-name: sun;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+}
+
+@keyframes sun{
+    0% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(-1200px);
+    }
+}
+
+.city{
+    background-image: url(./city\ \(2\).png);
+    width: 1000%;
+    height: 300px;
+    background-repeat: repeat-x;
+    position: relative;
+    top: 50px;
+    animation-name: city;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes city{
+    100% {
+        transform: translateX(-1500px);
+    }
+}
+
+.road{
+    height: 40%;
+    width: 1000%;
+    background-image: url(./road\ \(2\).jpg);
+    background-repeat: repeat-x;
+    /* z-index: 1; */
+    animation-name: road;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes road{
+    100% {
+        transform: translateX(-1500px);
+    }
+}
+
+.car{
+    background-image: url(./car\ \(2\).png);
+    width: 500px;
+    height: 200px;
+    background-size: cover;
+    position: absolute;
+    top: 400px;
+    left: 35%;
+}
+
+.wheel1{
+    background-image: url(./wheel\ \(2\).png);
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    position: absolute;
+    top: 510px;
+    left: 580px;
+    animation-name: wheel;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+.wheel2{
+    background-image: url(./wheel\ \(2\).png);
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    position: absolute;
+    top: 510px;
+    left: 888px;
+    animation-name: wheel;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+@keyframes wheel{
+    100% {
+        transform: rotate(360deg);
+    }
+}
